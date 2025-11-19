@@ -9,7 +9,9 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght=700&display=swap"
+			rel="stylesheet" />
 		<title>Abduol - Portfolio</title>
 	</head>
 	<body>
@@ -20,25 +22,29 @@
 				<ul class="nav-links">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#projects">Skills</a></li>
+					<li><a href="#contact">Projects</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Hero section -->
 		<section id="home" class="hero">
-			<div class="hero-content">
-				<h1>Abdulbasid Yahaya</h1>
-				<p>
-					Frontend Developer &amp; UI Designer. A Creative Frontend Developer
-					dedicated to crafting engaging, user-friendly, and responsive web
-					experiences
-				</p>
-				<button class="btn">View My Work</button>
-			</div>
-			<div class="hero-image">
-				<img src="assets/images/image.jpg" alt="Abduolbasid" />
+			<div class="hero-container">
+				<div class="hero-content">
+					<div class="content">
+						<h1>Abdulbasid Yahaya</h1>
+						<p>
+							Frontend Developer &amp; UI Designer. A Creative Frontend
+							Developer dedicated to crafting engaging, user-friendly, and
+							responsive web experiences
+						</p>
+						<button class="btn">View My Work</button>
+					</div>
+					<div class="hero-image">
+						<img src="assets/images/image.jpg" alt="Abduolbasid" />
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -49,8 +55,43 @@
 				<div class="about-content">
 					<p>
 						I'm a passionate Frontend developer with experience in creating
-						responsive and user-friendly websites.
+						responsive and user-friendly websites. Hi, I'm Bello, a dedicated
+						Frontend Developer with over 3 years of experience bringing designs
+						to life and building intuitive user interfaces. My passion lies in
+						creating seamless and highly interactive web experiences that
+						delight users on any device. I specialize in modern web
+						technologies, focusing on clean, modular code, responsive design
+						principles, and optimizing for performance and accessibility. I
+						enjoy collaborating with designers and backend teams to translate
+						complex requirements into beautiful and functional web applications.
+						I'm always eager to learn new frontend frameworks and best practices
+						to stay at the cutting edge of web development.
 					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills section -->
+		<section id="skills" class="skills">
+			<div class="container">
+				<h2>My Skills</h2>
+				<div class="skills-grid">
+					<!-- Grid layout -->
+					<div class="skill-card">
+						<i class="fas fa-code icon"></i>
+						<h3>Frontend Development</h3>
+						<p>Expertise in HTML5, CSS3, and a little JavaScript.</p>
+					</div>
+					<div class="skill-card">
+						<i class="fas fa-server icon"></i>
+						<h3>UI/UX Implementation</h3>
+						<p>Platform with modern UI design and Experience.</p>
+					</div>
+					<div class="skill-card">
+						<i class="fas fa-mobile-alt icon"></i>
+						<h3>Responsive Design</h3>
+						<p>Responsive website built with HTML, CSS and JavaScript</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -61,6 +102,36 @@
 				<h2>My Projects</h2>
 				<div class="projects-grid">
 					<!-- Grid layout -->
+					<div class="card">
+						<img src="assets/images/portfolio.PNG" alt="img" />
+						<div class="card-content">
+							<h3>Personal portfolio website</h3>
+							<p>Responsive website built with HTML, CSS and JavaScript</p>
+							<a href="" target="_blank">
+								<button>visit <i class="fas fa-arrow-right"></i></button>
+							</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="assets/images/Landing page.PNG" alt="img" />
+						<div class="card-content">
+							<h3>DevCrib Landing Page</h3>
+							<p>E-commerce Platform with modern UI design.</p>
+							<a href="" target="_blank">
+								<button>visit <i class="fas fa-arrow-right"></i></button>
+							</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="assets/images/template.PNG" alt="img" />
+						<div class="card-content">
+							<h3>Simple Website Template</h3>
+							<p>Platform with modern UI design.</p>
+							<a href="" target="_blank">
+								<button>visit <i class="fas fa-arrow-right"></i></button>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -68,6 +139,11 @@
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="footer-content">
+				<div class="social-contact">
+					<a href="#"><i class="fab fa-github"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+					<a href="#"><i class="fas fa-envelope"></i></a>
+				</div>
 				<p>&copy; 2025 Portfolio Clone. All rights reserved</p>
 			</div>
 		</footer>
