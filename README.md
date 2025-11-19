@@ -36,3 +36,7 @@ this si the live project link to view the the website
 ** Desktop : 1200px
 ** Tablet : 768px - 1199px
 \*\* Mobile : 320px - 767px
+
+## Github
+
+\*\* host and pull request
