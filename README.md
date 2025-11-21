@@ -19,7 +19,7 @@ this si the live project link to view the the website
 
 **HTML5 - semantic markup
 **CSS3 - Modern sttyling with flexbox and Grid Layout
-** Font Awesome - icons -**Google Fonts
+**Font Awesome - icons -**Google Fonts
 
 ## Sections
 
@@ -33,9 +33,9 @@ this si the live project link to view the the website
 
 ## Responsive Points
 
-** Desktop : 1200px
-** Tablet : 768px - 1199px
-\*\* Mobile : 320px - 767px
+**Desktop : 1200px
+**Tablet : 768px - 1199px
+\*\*Mobile : 320px - 767px
 
 ## Github
 
