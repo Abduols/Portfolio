@@ -9,7 +9,7 @@ const input = document.getElementById("guess");
 const button = document.getElementById("btn");
 const feedback = document.getElementById("message");
 const attemptsDisplay = document.getElementById("attempts");
-const reset = document.getElementById("reset");
+const reset = document.getElementById("btn-reset");
 
 // Start Function
 function start() {
@@ -22,13 +22,17 @@ function start() {
 	feedback.textContent = "Guess a number between 1-50";
 	feedback.style.color = "green";
 
+	input.disabled = false;
+	button.disabled = false;
+
 	input.value = "";
 	input.focus();
 }
+
 // game start
 start();
 
-// function to chech the guess
+// function to check the guess
 function check() {
 	// get number from input
 	const userGuess = Number(input.value);
@@ -74,3 +78,21 @@ function check() {
 	input.value = "";
 	input.focus();
 }
+
+// endGame
+
+function endGame() {
+	input.disabled = true;
+	button.disabled = true;
+}
+
+// event-listener
+button.addEventListener("click", check);
+
+reset.addEventListener("click", start);
+
+input.addEventListener("keypress", function (event) {
+	if (event.key === "Enter") {
+		check();
+	}
+});
