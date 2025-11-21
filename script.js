@@ -27,3 +27,50 @@ function start() {
 }
 // game start
 start();
+
+// function to chech the guess
+function check() {
+	// get number from input
+	const userGuess = Number(input.value);
+
+	// checking input using conditionals
+	if (!input.value || isNaN(userGuess)) {
+		feedback.textContent = "Please enter a valid number";
+		feedback.style.color = "red";
+
+		return;
+	}
+
+	if (userGuess < 1 || userGuess > 50) {
+		feedback.textContent = "Please enter a number between 1-50";
+		feedback.style.color = "red";
+
+		return;
+	}
+
+	// loop to count number of attempts
+	attempts++;
+	attemptsDisplay.textContent = attempts;
+
+	if (userGuess === number) {
+		feedback.textContent =
+			"You Won! Number was " + number + ". Attempts: " + attempts;
+		feedback.style.color = "green";
+		endGame();
+	} else if (attempts > numberOfAttempts) {
+		feedback.textContent = "Game Over! The number was " + number;
+		feedback.style.color = "red";
+		endGame();
+	} else {
+		if (userGuess < number) {
+			feedback.textContent = "Too low! Try higher number.";
+		} else {
+			feedback.textContent = "Too high! Try lower.";
+		}
+		feedback.style.color = "blue";
+	}
+
+	// clear input
+	input.value = "";
+	input.focus();
+}
