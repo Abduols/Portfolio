@@ -10,3 +10,20 @@ const button = document.getElementById("btn");
 const feedback = document.getElementById("message");
 const attemptsDisplay = document.getElementById("attempts");
 const reset = document.getElementById("reset");
+
+// Start Function
+function start() {
+	// random number generator
+	number = Math.floor(Math.random() * 50) + 1;
+	console.log(number, "is the secret number");
+
+	attempts = 0;
+	attemptsDisplay.textContent = attempts;
+	feedback.textContent = "Guess a number between 1-50";
+	feedback.style.color = "green";
+
+	input.value = "";
+	input.focus();
+}
+// game start
+start();
