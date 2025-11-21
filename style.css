@@ -8,7 +8,7 @@
 }
 
 body {
-	background: linear-gradient(to right, #657481, #91a3b3);
+	background: linear-gradient(to right, #657481, #798896);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,6 +24,18 @@ body {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 	text-align: center;
 	max-width: 420px;
+	animation: animate 0.5s ease-in;
+}
+
+@keyframes animate {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 h1 {
@@ -62,8 +74,14 @@ button {
 #btn {
 	width: 40%;
 	background: linear-gradient(to right, #3498db, #2980b9);
+	transition: all 0.4s ease;
 }
 
+#btn:hover {
+	background: linear-gradient(to left, #3498db, #2980b9);
+	transform: translateY(-1px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
 /* result section style */
 
 .result {
@@ -87,4 +105,25 @@ p {
 #btn-reset {
 	width: 40%;
 	background: linear-gradient(to right, #db3434, #b92929);
+	transition: all 0.4s ease;
+}
+
+#btn-reset:hover {
+	background: linear-gradient(to left, #e93838, #b92929);
+	transform: translateY(-1px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 30px 20px;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	#guess {
+		width: 90%;
+	}
 }
